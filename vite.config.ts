@@ -9,6 +9,7 @@ import VueRouter from 'unplugin-vue-router/vite'
 import AutoImport from 'unplugin-auto-import/vite'
 import { VueRouterAutoImports } from 'unplugin-vue-router'
 import Components from 'unplugin-vue-components/vite'
+import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -38,6 +39,7 @@ export default defineConfig({
     Components({
       directoryAsNamespace: true,
       collapseSamePrefixes: true,
+      resolvers: [ElementPlusResolver()],
     }),
   ],
   resolve: {
