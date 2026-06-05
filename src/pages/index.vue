@@ -1,6 +1,6 @@
 <template>
   <div ref="target">
-    <div>Hello world unplugin-vue-router</div>
+    <!-- <div>Hello world unplugin-vue-router</div> -->
     <RouterLink to="/about">About</RouterLink>
     <RouterLink to="/">Home</RouterLink>
     <div>{{ msg }}</div>
@@ -30,3 +30,8 @@ const { x, y, isOutside } = useMouseInElement(target)
 </script>
 
 <style scoped></style>
+
+<route lang="yaml">
+meta:
+  layout: default
+</route>
